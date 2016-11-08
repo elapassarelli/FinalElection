@@ -53,7 +53,7 @@ class ApplicationController < Sinatra::Base
   # Count = Candidates.new
 
 post '/process' do
-    @array = ["epassarelli18", "tpassarelli18"]
+    @array = ["names", "othernames"]
     @username = params[:username]
     @answer = can_vote(@username,@array)
     if @answer == true
